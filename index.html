@@ -24,7 +24,10 @@
     .pc{display: none}
     .buttom:hover{position: relative;top: -1px;background-color: #FDBC0D}
         
-
+    .distance{ padding-top:1em;}
+    .texto {font-size:1.4em; width: 11em; -moz-box-sizing: border-box; box-sizing: border-box; border: 1px solid rgba(0,0,0,.2);}
+    .formu{border: 1px solid #ff9ccf; border-radius: 1em;}
+    .front{width: 90px;}
 
     .menu{padding:1em;background-color: white;width: 100%}
     .inicio{padding: 5em 0; background-image: url('img/inicio.jpg'); background-size: cover; background-position: -10em center }
@@ -48,7 +51,9 @@
 
     .logo{height: 7em;}
     .icon{height: 1.2em;}
- 
+ .color{
+  background-color:red;
+ }
     @media(min-width:941px){
         .container{width: 76%;margin-left: 12%}
         .columns3{width: 32.5%;display: inline-block;} .columns2{ width: 48.5%;display: inline-block;}.columns4{width: 24.5%;display: inline-block;}
@@ -98,7 +103,7 @@
       <div class="container" >
           <h1 class="fs-large left">Academia de Conducción Certificada</h1>
           <ul>
-              <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Más de 8 años de experiencia  <p></p></li>
+              <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle">Buena experiencia  <p></p></li>
               <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases teóricas en nuestras sedes <p></p></li>
               <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Clases de domingo a domingo <p></p></li>
               <li class="principal-list left"><img class="list-icon line middle" src="img/cono.png" alt=""> <p class="fs-medium line middle"> Pagos diferidos durante el curso <p></p></li>
@@ -107,8 +112,39 @@
               </li>
           </ul>
       </div>
+    <div class="container">
+      <form action="Notenemos por el momento" method="post" class="formu aside center">
+        <h2 class="center">Formulario</h2>
+        <div class="w40f  line top left">
+            <div class="distance center">
+                <label class="line front" for="name">Nombre Completo*</label>
+                <input class="texto" type="text" id="Name" required>
+            </div>
+            <div class="distance center">
+                <label class="line front" for="company">Empresa*</label>
+                <input class="texto" type="text" id="Company" required>
+            </div>
+            <div class="distance center">
+                <label class="line front" for="email">Correo*</label>
+                <input class="texto" type="email" id="Email" required>
+            </div>
+            <div class="distance center" >
+                <label class="line front" for="mobile">Celular*</label>
+                <input class="texto" type="tel" pattern="[0-9]{10}" id="Mobile" required>
+            </div>
+            <div class="distance center">
+                <label class="line front" for="message">Mensaje*</label>
+                <textarea class="texto top" id="message"  rows="5" required></textarea>
+            </div>
+            <div class="center buttom distance   w30">
+                <button  type="submit">Enviar</button>
+            </div>
+      </div>
+        <div class="w50f line right">
+            <img class="w90" src="img/formulario.jpg" alt="">
+      </div>     
+    </form> 
   </div>
-    
     <script type="text/javascript">
         WebFontConfig = {
           google: { families: [ 'Open+Sans:400,700' ] }
