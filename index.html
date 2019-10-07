@@ -60,7 +60,7 @@
     }
 
     .imagen-dotacion{
-        margin: 2em 0;
+        margin: 1em 0;
     }
 
     .margin-services{
@@ -77,8 +77,13 @@
 
     .s1{width: 50%;}.s2{width: 50%;}.s3{width: 50%;}.s4{width: 50%;}.s5{width: 50%;}.s6{width: 50%;}
     .logo{display: none}
-    .logo-o{width: 35%}
+    .logo-o{width: 40%}
     .logo-footer{width: 15em}
+
+    #Contact-Bar{position: fixed; top:0; width: 100%; padding: .5em 0}
+    body{
+        padding-top: 3.2em 
+    }
 
 
 
@@ -94,27 +99,33 @@
         .section{padding:10em 0;}
 
         .menu{position: fixed;top:0}
-        .inicio{padding: 25em 0 23em 0; background-position: center right}
+        .inicio{padding: 23em 0 23em 0; background-position: center right}
         .maUD{margin:0}
 
         .s1{width: 25%;}.s2{width: 25%;}.s3{width: 28%;}.s4{width: 25%;}.s5{width: 21%;}.s6{width: 28%;}
         .logo{height: 12em; position: fixed; top: 1em; left: 1em; display: inline-block; border: 1px solid #e8ced8}
         .logo-o{display: none}
+        .imagen-dotacion{
+            margin: 2em 0;
+        }
     }
     @media(min-width:1367px){
-        .inicio{padding: 32em 0 30em 0}
+        .inicio{padding: 30em 0 30em 0}
     }
 
     
   </style>
 </head>
 <body>
+    <div id="Contact-Bar" class="bg-pink fs-normal center mobile">
+        <a name="Convertion" class="dark line  middle" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes"><img  class="line middle icon" src="img/whatsapp.png" alt="wa"> <div class="line middle" >304 583 4160</div> </a>
+    </div>
     <div id="Menu" class="menu center bg-black" >
         <div class="columns2  middle left">
             <img class="logo" src="img/logo.png" alt="logo">
             <img class="logo-o" src="img/logo-o.png" alt="logo">
         </div>
-        <div class="columns2 right middle fs-normal pc " >
+        <div class="columns2 right middle fs-normal pc" >
             <ul> 
                 <li class="line separar ">
                     <a class="line middle dark f-pink" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes">
@@ -202,7 +213,7 @@
                 <h3 class="fs-medium left">Atención Personalizada</h3>
                 <h4 class="fs-medium normal left">Atendemos sus necesidades de forma rápida y personalizada</h4>
             </div>
-            <div class="columns2 middle right">
+            <div class="columns2 middle right maUD">
                 <a class="buttom bg-pink fs-normal" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20la%20visita%20gratuita"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> ¡Pedir Cita!</a>
             </div>
         </div>
@@ -212,22 +223,22 @@
             <h2 class="center separar fs-medium">Calidad y Cumplimiento</h2>
             <p class="center separar marginTC fs-medium">Nos aseguramos de que todos nuestros procesos estén avalados por los más altos estándares de <span class="dark">calidad</span> y <span class="dark">tiempo</span> para llegar a nuestros clientes en el <span class="dark">momento oportuno</span> </p>
             <div class="fs-normal">
-                <div class="columns3 center maUD">
+                <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d01.jpg" alt="persona feliz">
                 </div>
-                <div class="columns3 center maUD">
+                <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d02.jpg" alt="persona feliz">
                 </div>
-                <div class="columns3 center maUD">
+                <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d03.jpg" alt="persona feliz">
                 </div>
-                <div class="columns3 center maUD">
+                <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d04.jpg" alt="persona feliz">
                 </div>
-                <div class="columns3 center maUD">
+                <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d05.jpg" alt="persona feliz">
                 </div>
-                <div class="columns3 center maUD">
+                <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d06.jpg" alt="persona feliz">
                 </div>
             </div>
@@ -259,7 +270,7 @@
                         <textarea class="top" id="message"  rows="5" required></textarea>
                     </div>
                     <div class="right">
-                        <button class="buttom bg-pink fs-normal" type="submit">Enviar</button>
+                        <button class="buttom bg-pink fs-normal maUD" type="submit">Enviar</button>
                     </div>
                 </div>
             </form>
