@@ -10,6 +10,7 @@
     *{margin: 0;padding: 0;border:none;background: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
     body{font-family: 'Open Sans', sans-serif;color: #333;font-size: 10px} li{list-style: none;}
     .container{width: 100%; padding: 0 1em}
+    input, textarea{border: 1px solid #bababa; background-color: white;margin: .5rem 0 1rem 0;padding: .5rem 1rem; width: 100%}
     .line{display: inline-block;}.middle{vertical-align:middle}.bottom{vertical-align: bottom}.top{vertical-align: top }
     .right, .left, .center{text-align: center}
     .dark{font-weight: 700}.normal{font-weight: 400}
@@ -20,7 +21,7 @@
     .w0,.w10,.w20,.w30,.w40,.w50,.w60,.w70,.w80,.w90{width: 100%}
     .w40f{width: 40%}.w50f{width: 50%}.w60f{width: 60%}
 
-    .buttom{font-weight: 700; box-shadow: 0px 2px 2px 2px rgba(0,0,0,.2);border-radius: 10px; padding: .5em 2em; transition: background-color .5s ease; background-color: #EC89EC !important;}
+    .buttom{font-weight: 700; box-shadow: 0px 2px 2px 2px rgba(0,0,0,.2);border-radius: 10px; padding: .5em 2em; transition: background-color .5s ease; background-color: #EC89EC !important;cursor: pointer}
     .pc{display: none}
     .buttom:hover{position: relative;top: -1px}
         
@@ -43,6 +44,7 @@
     .fs-medium{font-size:1.6em;}
     .fs-normal{font-size:1.4em}
     .fs-little{font-size: 0.9em;}
+    .fs-little-p{font-size: 0.7em; margin-top:1em;}
     .marginTC{margin-bottom: 3em}
     .maUD{margin: 2em 0}
     
@@ -87,6 +89,7 @@
 
         .w90{width: 90%}.w80{width: 80%}.w70{width: 70%}.w60{width: 60%}.w50{width: 50%}.w40{width: 40%}.w30{width: 30%}.w20{width: 20%}.w10{width: 10%}.w0{width: initial}
         .pc{display: inline-block;}
+        .block{display: block}
         .mobile{display: none}
         .section{padding:10em 0;}
 
@@ -114,7 +117,7 @@
         <div class="columns2 right middle fs-normal pc " >
             <ul> 
                 <li class="line separar ">
-                    <a class="line middle dark f-pink" href="https://wa.me/573045834160?text=Hola,%20me%20interesa%20obtener%20más%20información%20acerca%20de%20las%20licencias%20de%20conducción."text>
+                    <a class="line middle dark f-pink" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes">
                     <img  class="line middle icon" src="img/whatsapp.png" alt="wa">
                     <p class="line middle dark f-pink">304 583 4160</p>
                     </a>
@@ -137,7 +140,7 @@
                 <li class="principal-list left"><img class="list-icon line middle" src="img/visitor.png" alt=""> <p class="fs-medium line middle"> Visita empresarial gratuita <p></p></li>
                 <li class="principal-list left"><img class="list-icon line middle" src="img/quality.png" alt=""> <p class="fs-medium line middle"> Altos estándares de calidad <p></p></li>
                 <li class="principal-list main-button left">
-                    <a class="buttom bg-pink fs-normal" href="https://wa.me/573045834160?text=Buen%día,%deseo%más%información%sobre%la%visita%gratuita"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> ¡Pedir Cita!</a>
+                    <a class="buttom bg-pink fs-normal" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20la%20visita%20gratuita"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> ¡Pedir Cita!</a>
                 </li>
             </ul>
         </div>
@@ -200,7 +203,7 @@
                 <h4 class="fs-medium normal left">Atendemos sus necesidades de forma rápida y personalizada</h4>
             </div>
             <div class="columns2 middle right">
-                <a class="buttom bg-pink fs-normal" href="https://wa.me/573045834160?text=Buen%día,%deseo%más%información%sobre%la%visita%gratuita"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> ¡Pedir Cita!</a>
+                <a class="buttom bg-pink fs-normal" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20la%20visita%20gratuita"><img  class="line middle icon" src="img/whatsapp-b.png" alt="wa"> ¡Pedir Cita!</a>
             </div>
         </div>
     </div>
@@ -230,6 +233,41 @@
             </div>
         </div>
     </div> 
+    <section class="bg-gray section">
+        <div class="container center">
+            <h2 class="center marginTC">Contáctanos</h2>
+            <form action="data/data.php" method="post" class="middle line columns2">
+                <div class="left">
+                    <div class="left">
+                        <label class="block fs-normal" for="name">Nombre Completo*</label>
+                        <input class="texto" type="text" id="Name" required>
+                    </div>
+                    <div class="left">
+                        <label class="block fs-normal" for="company">Empresa*</label>
+                        <input class="" type="text" id="Company" required>
+                    </div>
+                    <div class="left">
+                        <label class="block fs-normal" for="email">Correo*</label>
+                        <input class="" type="email" id="Email" required>
+                    </div>
+                    <div class="left" >
+                        <label class="block fs-normal" for="mobile">Celular*</label>
+                        <input class="" type="tel" pattern="[0-9]{10}" id="Mobile" required>
+                    </div>
+                    <div class="left">
+                        <label class="block fs-normal top" for="message">Mensaje*</label>
+                        <textarea class="top" id="message"  rows="5" required></textarea>
+                    </div>
+                    <div class="right">
+                        <button class="buttom bg-pink fs-normal" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="columns2 line right middle">
+                <img class="w90" src="img/formulario.jpg" alt="">
+            </div>      
+        </div>
+    </section>
     <div id="Footer" class="bg-black aside fs-normal f-pink">
         <div class="columns3 center top f-pink">
             <h3>Fabrica</h3>
@@ -248,7 +286,7 @@
         <div class="center columns3 center top f-pink">
             <img class="logo-footer f-pink"  src="img/logo.png" alt="Logo">    
         </div>
-        <p class="allrights center fs-little f-pink"> Todos los derechos reservados Big Bang © 2019 - Desarrollado por <a class="f-pink" href="https://sahet.co/publicidad">sahet.co/publicidad</a></p>
+        <p class="allrights center fs-little-p f-pink"> Todos los derechos reservados Big Bang © 2019 - Desarrollado por <a class="f-pink" href="https://sahet.co/publicidad">sahet.co/publicidad</a></p>
     </div>
     
       
