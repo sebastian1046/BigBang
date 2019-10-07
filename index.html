@@ -27,7 +27,7 @@
 
     
     .menu{padding:.4em;background-color: white;width: 100%}
-    .inicio{padding: 5em 0; background-image: url('img/inicio.jpg'); background-size: cover; background-position: center right}
+    .inicio{padding: 5em 0; background-image: url('img/inicio.jpg'); background-size: cover; background-position: center left}
     .allrights{padding: 2em 0;}
 
     .bg-black{background-color: #333}
@@ -35,9 +35,7 @@
     .bg-gray{background-color: #f2f2f2}
     .bg-black{background-color: black}
     .bg-pink{background-color: #E8CED8}
-    a{text-decoration:none; color:#333; display: inline-block;}
-
-    .pesado{font-weight: 700}
+    a{text-decoration:none; color:#333; display: inline-block}
     .f-white{color: #f2f2f2}
     .f-pink{color: #E8CED8}
     .fs-xxlarge{font-size: 2.8em}
@@ -51,7 +49,7 @@
     .principal-list{margin: 1.6em 0 0 3em; font-weight: 700}
     .list-icon{height: 2.2em;}
 
-    .logo{height: 12em; position: fixed; top: 1em; left: 1em;}
+    
     .icon{height: 1.2em;}
 
     .logo-cliente{
@@ -75,6 +73,10 @@
         width: 30%;
     }
 
+    .s1{width: 50%;}.s2{width: 50%;}.s3{width: 50%;}.s4{width: 50%;}.s5{width: 50%;}.s6{width: 50%;}
+    .logo{display: none}
+    .logo-o{width: 35%}
+
 
 
     @media(min-width:941px){
@@ -88,20 +90,29 @@
         .section{padding:10em 0;}
 
         .menu{position: fixed;top:0}
-        .inicio{padding: 32em 0 30em 0; background-position: center right}
+        .inicio{padding: 25em 0 23em 0; background-position: center right}
         .maUD{margin:0}
+
+        .s1{width: 25%;}.s2{width: 25%;}.s3{width: 28%;}.s4{width: 25%;}.s5{width: 21%;}.s6{width: 28%;}
+        .logo{height: 12em; position: fixed; top: 1em; left: 1em; display: inline-block; border: 1px solid #e8ced8}
+        .logo-o{display: none}
     }
     @media(min-width:1367px){
-
+        .inicio{padding: 32em 0 30em 0}
     }
 
-    .s1{width: 25%;}.s2{width: 25%;}.s3{width: 28%;}.s4{width: 25%;}.s5{width: 21%;}.s6{width: 30%;}
+    
   </style>
 </head>
 <body>
+<<<<<<< HEAD
     <div id="Menu" class="menu center bg-black " >
+=======
+    <div id="Menu" class="menu center bg-black" >
+>>>>>>> b7b3e37920c5d3d3b8467f84ac328767617216ce
         <div class="columns2  middle left">
             <img class="logo" src="img/logo.png" alt="logo">
+            <img class="logo-o" src="img/logo-o.png" alt="logo">
         </div>
         <div class="columns2 right middle fs-normal pc " >
             <ul> 
@@ -156,32 +167,32 @@
             <div class="columns3 center maUD margin-services">
                 <img class="w40 s1" src="img/editor.png" alt="pantalla">
                 <h3>Diseño</h3> 
-                <p>Identificamos el <span class="pesado">estilo</span> de tu empresa y <span class="pesado"> diseñamos</span> los uniformes y las dotaciones más apropiados para ti y tu equipo</p>   
+                <p>Identificamos el <span class="dark">estilo</span> de tu empresa y <span class="dark"> diseñamos</span> los uniformes y las dotaciones más apropiados para ti y tu equipo</p>   
             </div>
             <div class="columns3 center maUD margin-services">
                 <img class="icon-service s2" src="img/color-palette.png" alt="carta">
                 <h3>Carta Textil</h3>
-                <p>Seleccionamos las mejores <span class="pesado">paletas de colores</span> y <span class="pesado">texturas</span> que vayan conforme al estilo de tu empresa</p>
+                <p>Seleccionamos las mejores <span class="dark">paletas de colores</span> y <span class="dark">texturas</span> que vayan conforme al estilo de tu empresa</p>
             </div>
             <div class="columns3 center maUD margin-services">
                 <img class="icon-service s3" src="img/sewing.png" alt="maquina">
                 <h3>Confección</h3>
-                <p>Nos encargamos de que la calidad textil <span class="pesado">(materiales y confección)</span> supla las necesidades de tu empresa</p>
+                <p>Nos encargamos de que la calidad textil <span class="dark">(materiales y confección)</span> supla las necesidades de tu empresa</p>
             </div>
             <div class="columns3 center maUD margin-services">
                 <img class="icon-service s4" src="img/printer.png" alt="impresora">
                 <h3>Estampado</h3>
-                <p>Estampados personalizados en <span class="pesado">alta resolución</span> que no se destiñen y perduran en cualquier tipo de material</p>
+                <p>Estampados personalizados en <span class="dark">alta resolución</span> que no se destiñen y perduran en cualquier tipo de material</p>
             </div>
             <div class="columns3 center maUD margin-services">
                 <img class="icon-service s5" src="img/weave.png" alt="tela">
                 <h3>Bordado</h3>
-                <p>Bordados de alta calidad de <span class="pesado">puntadas firmes</span> con <span class="pesado">los mejores hilos</span> que garantizan la perduración de tu marca</p>
+                <p>Bordados de alta calidad de <span class="dark">puntadas firmes</span> con <span class="dark">los mejores hilos</span> que garantizan la perduración de tu marca</p>
             </div>
             <div class="columns3 center maUD margin-services">
                 <img class="icon-service s6" src="img/delivery-truck.png" alt="Camion">
                 <h3>Envios</h3>
-                <p>Envios <span class="pesado">seguros a todo el país</span>  mediante la<span class="pesado"> transpartadora de tu preferencia</span></p>
+                <p>Envios <span class="dark">seguros a todo el país</span>  mediante la<span class="dark"> transpartadora de tu preferencia</span></p>
             </div>
         </div>
     </div>
@@ -199,7 +210,7 @@
     <div  class="section" id="Calidad">
         <div class="container">
             <h2 class="center separar fs-medium">Calidad y Cumplimiento</h2>
-            <p class="center separar marginTC fs-medium">Nos aseguramos de que todos nuestros procesos estén avalados por los más altos estándares de <span class="pesado">calidad</span> y <span class="pesado">tiempo</span> para llegar a nuestros clientes en el <span class="pesado">momento oportuno</span> </p>
+            <p class="center separar marginTC fs-medium">Nos aseguramos de que todos nuestros procesos estén avalados por los más altos estándares de <span class="dark">calidad</span> y <span class="dark">tiempo</span> para llegar a nuestros clientes en el <span class="dark">momento oportuno</span> </p>
             <div class="fs-normal">
                 <div class="columns3 center maUD">
                     <img class="w70 imagen-dotacion" src="img/d01.jpg" alt="persona feliz">
