@@ -1,7 +1,7 @@
 <?php
 if (isset($_POST) && sizeof($_POST) > 0) {
 	
-	$email = "bigbangdotaciones@gmail.com, felipefontal@gmail.com";
+	$email = "bigbangdotaciones@gmail.com, felipefontal@gmail.com, andresxaw@gmail.com";
 	
 	if (isset($_POST['formtype'])) {
 		unset($_POST['formtype']);
@@ -13,20 +13,23 @@ if (isset($_POST) && sizeof($_POST) > 0) {
 						 "Datos de contacto: <br/><br/>";
 						 
 	foreach ($_POST as $campo => $valor) {
-		if($valor != ""){
+		if($campo == 'Convertion'){
+			
+		} else if ($valor != "") {
 			$mensaje .= "<strong>" . $campo . ": </strong> " . $valor . "<br/>";
 		} else {
 			echo "No se pudo enviar";
 			exit;
-		} 	
+		}
 	}	
 
 	$headers = "From:cliente@bingbangdotaciones.com\n";
 	$headers.= "Content-Type:text/html; charset=UTF-8";
+
 	if($email != "") {
 		$envio = mail($email,$asunto,$mensaje,$headers);
 		if($envio){
-			header('location: ../gracias.html?cantidad=' . $_POST['Cantidad']);
+			header('location: ../gracias.html');
 		}
 	}else{
 		echo "No se pudo enviar";

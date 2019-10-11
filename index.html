@@ -11,7 +11,7 @@
     *{margin: 0;padding: 0;border:none;background: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
     body{font-family: 'Open Sans', sans-serif;color: #333;font-size: 10px} li{list-style: none;}
     .container{width: 100%; padding: 0 1em}
-    input, textarea{border: 1px solid #bababa; background-color: white;margin: .5rem 0 1rem 0;padding: .5rem 1rem; width: 100%}
+    input, textarea{font-family: 'Open Sans', sans-serif;border: 1px solid #bababa; background-color: white;margin: .5rem 0 1rem 0;padding: .5rem 1rem; width: 100%}
     .line{display: inline-block;}.middle{vertical-align:middle}.bottom{vertical-align: bottom}.top{vertical-align: top }
     .right, .left, .center{text-align: center}
     .dark{font-weight: 700}.normal{font-weight: 400}
@@ -59,6 +59,12 @@
     .logo-cliente{
         height: 5em;
         padding: 1em 1.5em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .logo-cliente:nth-child(11){
+        height: 4.2em;
     }
 
     .imagen-dotacion{
@@ -101,7 +107,7 @@
     }
 
     .te{
-        margin: 1em 2em 0em 2em;
+        margin: 2em 3em 1em 3em;
         display: inline-block;
         vertical-align: middle
     }
@@ -213,7 +219,7 @@
     </div>
     <div id="Inicio" class="inicio">
         <div class="pc w100">
-            <img class="imagen-desktop" src="img/portada-desktop.jpg" alt="imagen-portada">
+            <img class="imagen-desktop" src="img/portada-desktop1.jpg" alt="imagen-portada">
         </div>
         <div class="container" >
             <h1 class="fs-large left">Dotaciones y Uniformes Empresariales</h1>
@@ -242,6 +248,8 @@
                     <img class="logo-cliente" src="img/08l.png" alt="cliente">
                     <img class="logo-cliente" src="img/03l.png" alt="cliente">
                     <img class="logo-cliente" src="img/01l.png" alt="cliente">
+                    <img class="logo-cliente" src="img/10l.png" alt="cliente">
+                    <img class="logo-cliente" src="img/11l.png" alt="cliente">
                 </div>
             </div>
         </div> 
@@ -251,7 +259,7 @@
             <div class="columns3 center maUD margin-services">
                 <img class="w40 s1" src="img/editor.png" alt="pantalla">
                 <h3>Diseño</h3> 
-                <p>Identificamos el <span class="dark">estilo</span> de tu empresa y <span class="dark"> diseñamos</span> los uniformes y las dotaciones más apropiadas para ti y tu equipo</p>   
+                <p>Identificamos el <span class="dark">estilo</span> de tu empresa, <span class="dark"> diseñamos</span> los uniformes y prendas más apropiadas para tu equipo de trabajo</p>   
             </div>
             <div class="columns3 center maUD margin-services">
                 <img class="icon-service s2" src="img/color-palette.png" alt="carta">
@@ -299,7 +307,7 @@
             </div>
         </div>
     </div>
-    <div  class="section" id="Calidad">
+    <div  class="section bg-gray" id="Calidad">
         <div class="container">
             <h2 class="center separar fs-medium">Calidad y Cumplimiento</h2>
             <p class="center separar marginTC fs-medium">Nos aseguramos de que todos nuestros procesos estén avalados por los más altos estándares de <span class="dark">calidad</span> y <span class="dark">tiempo</span> para llegar a nuestros clientes en el <span class="dark">momento oportuno</span> </p>
@@ -311,7 +319,7 @@
                     <img class="w70 imagen-dotacion" src="img/d07.jpg" alt="persona feliz">
                 </div>
                 <div class="columns3 center">
-                    <img class="w70 imagen-dotacion" src="img/d03.jpg" alt="persona feliz">
+                    <img class="w70 imagen-dotacion" src="img/d08.jpg" alt="persona feliz">
                 </div>
                 <div class="columns3 center">
                     <img class="w70 imagen-dotacion" src="img/d04.jpg" alt="persona feliz">
@@ -362,23 +370,23 @@
                 <div class="left">
                     <div class="leftF">
                         <label class="block fs-normal" for="name">Nombre Completo*</label>
-                        <input class="texto" type="text" id="Name" required>
+                        <input name="Nombre" class="texto" type="text" id="Name" required>
                     </div>
                     <div class="leftF">
                         <label class="block fs-normal" for="company">Empresa*</label>
-                        <input class="" type="text" id="Company" required>
+                        <input name="Empresa" class="" type="text" id="Company" required>
                     </div>
                     <div class="leftF">
                         <label class="block fs-normal" for="email">Correo*</label>
-                        <input class="" type="email" id="Email" required>
+                        <input name="Email" class="" type="email" id="Email" required>
                     </div>
                     <div class="leftF" >
                         <label class="block fs-normal" for="mobile">Celular*</label>
-                        <input class="" type="tel" pattern="[0-9]{10}" id="Mobile" required>
+                        <input name="Celular" class="" type="tel" pattern="[0-9]{10}" id="Mobile" required>
                     </div>
                     <div class="leftF">
                         <label class="block fs-normal top" for="message">Mensaje*</label>
-                        <textarea class="top" id="message"  rows="5" required></textarea>
+                        <textarea name="Mensaje" class="top" id="message"  rows="5" required></textarea>
                     </div>
                     <div class="rightF">
                         <button name="Convertion" class="buttom bg-pink fs-normal maD" type="submit">Enviar</button>

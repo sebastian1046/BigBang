@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <title>BigBang - Dotaciones y Uniformes Empresariales</title>
+  <meta name="description" content="Diseño y confección de uniformes y dotaciones para darle identidad y estilo a tu empresa. ">
   <style>
     *{margin: 0;padding: 0;border:none;background: none;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
     body{font-family: 'Open Sans', sans-serif;color: #333;font-size: 10px} li{list-style: none;}
     .container{width: 100%; padding: 0 1em}
-    input, textarea{border: 1px solid #bababa; background-color: white;margin: .5rem 0 1rem 0;padding: .5rem 1rem; width: 100%}
+    input, textarea{font-family: 'Open Sans', sans-serif;border: 1px solid #bababa; background-color: white;margin: .5rem 0 1rem 0;padding: .5rem 1rem; width: 100%}
     .line{display: inline-block;}.middle{vertical-align:middle}.bottom{vertical-align: bottom}.top{vertical-align: top }
     .right, .left, .center{text-align: center}
     .dark{font-weight: 700}.normal{font-weight: 400}
@@ -21,14 +22,14 @@
     .w0,.w10,.w20,.w30,.w40,.w50,.w60,.w70,.w80,.w90{width: 100%}
     .w40f{width: 40%}.w50f{width: 50%}.w60f{width: 60%}
 
-    .buttom{font-weight: 700; box-shadow: 0px 2px 2px 2px rgba(0,0,0,.2);border-radius: 10px; padding: .5em 2em; transition: background-color .5s ease; background-color: #EC89EC !important;cursor: pointer}
+    .buttom{font-weight: 700; box-shadow: 0px 2px 2px 2px rgba(0,0,0,.2);border-radius: 10px; padding: .5em 2em; transition: background-color .5s ease; background-color: #EC89EC !important;cursor: pointer; font-size: 1.6em !important}
     .pc{display: none}
     .buttom:hover{position: relative;top: -1px}
         
 
     
-    .menu{padding:.4em;background-color: white;width: 100%}
-    .inicio{padding: 5em 0; background-image: url('img/inicio.jpg'); background-size: cover; background-position: center left; position: relative; z-index: 1}
+    .menu{background-color: white;width: 100%;}
+    .inicio{padding: .5em 0 5em 0; position: relative; z-index: 1}
     .allrights{padding: 2em 0;}
 
     .bg-black{background-color: #333}
@@ -47,8 +48,9 @@
     .fs-little-p{font-size: 0.7em; margin-top:1em;}
     .marginTC{margin-bottom: 3em}
     .maUD{margin: 2em 0}
+    .maD{margin-bottom: 2em}
     
-    .principal-list{margin: 1.6em 0 0 3em; font-weight: 700}
+    .principal-list{margin: 1.6em 0 0 0; font-weight: 700}
     .list-icon{height: 2.2em;}
 
     
@@ -57,6 +59,12 @@
     .logo-cliente{
         height: 5em;
         padding: 1em 1.5em;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .logo-cliente:nth-child(11){
+        height: 4.2em;
     }
 
     .imagen-dotacion{
@@ -65,6 +73,8 @@
 
     .margin-services{
         padding: 2em 2em;
+        vertical-align: top;
+        display: inline-block;
     }
 
     h3{
@@ -86,7 +96,26 @@
     }
 
     .bomb{
-        position: absolute; bottom: 0; left: -50px; width: 18%;
+        display: none;
+    }
+
+    .leftF{
+        text-align: left;
+    }
+    .rightF{
+        text-align: right;
+    }
+
+    .te{
+        margin: 2em 3em 1em 3em;
+        display: inline-block;
+        vertical-align: middle
+    }
+
+    .te01{height:2.8em;}.te02{height:2em;}.te03{height:1.7em;}.te04{height:2.7em;}.te05{height:2.7em;}
+
+    .best{
+        margin-top: 5em;
     }
 
 
@@ -96,49 +125,91 @@
         .columns3{width: 32.5%;display: inline-block;} .columns2{ width: 48.5%;display: inline-block;}.columns4{width: 24.5%;display: inline-block;}.columns5{width: 18.9%;display: inline-block;}
         .right{text-align: right}.center{text-align: center}.left{text-align: left}
 
-        .w90{width: 90%}.w80{width: 80%}.w70{width: 70%}.w60{width: 60%}.w50{width: 50%}.w40{width: 40%}.w30{width: 30%}.w20{width: 20%}.w10{width: 10%}.w0{width: initial}
+        .w100{width:100%;}.w90{width: 90%}.w80{width: 80%}.w70{width: 70%}.w60{width: 60%}.w50{width: 50%}.w40{width: 40%}.w30{width: 30%}.w20{width: 20%}.w10{width: 10%}.w0{width: initial}
         .pc{display: inline-block;}
         .block{display: block}
         .mobile{display: none}
         .section{padding:10em 0;}
 
-        .menu{position: fixed;top:0; z-index: 100;}
-        .inicio{padding: 23em 0 23em 0; background-position: center right}
+        .menu{padding:.4em;position: fixed;top:0; z-index: 100; background-color: black;}
+        .inicio{padding: 0em 0 15em 0;}
         .maUD{margin:0}
 
-        .s1{width: 25%;}.s2{width: 25%;}.s3{width: 28%;}.s4{width: 25%;}.s5{width: 21%;}.s6{width: 28%;}
-        .logo{height: 12em; position: fixed; top: 1em; left: 1em; display: inline-block; border: 1px solid #e8ced8; z-index: 100;}
+        .s1{width: 29%;}.s2{width: 25%;}.s3{width: 25%;}.s4{width: 25%;}.s5{width: 21%;}.s6{width: 28%;}
+        .logo{width: 32.5%; position: fixed; top: 0; left: 0; display: inline-block; z-index: 100;}
+        .imagen-desktop{width: 100%; position: relative; top: -3.2em; left: 0; display: inline-block; z-index: 99;}
         .logo-o{display: none}
         .imagen-dotacion{
             margin: 2em 0;
         }
+        .principal-list{margin: 1.6em 0 0 3em;}
+        .bomb{
+            display:inline-block;position: absolute; bottom: 0; left: -50px; width: 18%;
+        }
+
+        .logo-big{
+            width: 32.3%;
+            transition: all .2s ease-in;
+        }
+        .logo-normal{
+            width: 22%;
+        }
     }
     @media(min-width:1367px){
-        .inicio{padding: 30em 0 30em 0}
+        
     }
 
     
   </style>
+    <!-- Global site tag (gtag.js) - Google Ads: 703333995 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-703333995"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-703333995');
+    </script>
+    <!-- Event snippet for Contacto WhatsApp conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+        var callback = function () {
+        if (typeof(url) != 'undefined') {
+            window.location = url;
+        }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-703333995/WcFqCLPjmK4BEOuMsM8C',
+            'event_callback': callback
+        });
+        return false;
+    }
+    </script>
+        
 </head>
 <body>
     <div id="Contact-Bar" class="bg-pink fs-normal center mobile">
         <a name="Convertion" class="dark line  middle" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes"><img  class="line middle icon" src="img/whatsapp.png" alt="wa"> <div class="line middle" >304 583 4160</div> </a>
     </div>
-    <div id="Menu" class="menu center bg-black" >
-        <div class="columns2  middle left">
-            <img class="logo" src="img/logo.png" alt="logo">
-            <img class="logo-o" src="img/logo-o.png" alt="logo">
+    <div id="Menu" class="menu center" >
+        <div class="columns2  middle left pc">
+            <img id="Logo" class="logo logo-big" src="img/logo1.png" alt="logo">
+            <img class="logo-o" src="img/logo1.png" alt="logo">
+        </div>
+        <div class="mobile">
+            <img class="w90" src="img/portada-mobile.jpg" alt="portada-mobile">
         </div>
         <div class="columns2 right middle fs-normal pc" >
             <ul> 
                 <li class="line separar ">
-                    <a class="line middle dark f-pink" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes">
+                    <a name="Convertion" class="line middle dark f-pink" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes">
                     <img  class="line middle icon" src="img/whatsapp.png" alt="wa">
                     <p class="line middle dark f-pink">304 583 4160</p>
                     </a>
                 </li>
                 <li class="line separar">
-                    <a class="line middle" href="tel:3017872978">
+                    <a name="Convertion" class="line middle" href="tel:3017872978">
                         <img class="line middle icon"src="img/tel.png" alt="telefonoFijo">
                         <p class="line middle dark f-pink" >301 787 2978</p>
                     </a>    
@@ -147,15 +218,17 @@
         </div>
     </div>
     <div id="Inicio" class="inicio">
+        <div class="pc w100">
+            <img class="imagen-desktop" src="img/portada-desktop1.jpg" alt="imagen-portada">
+        </div>
         <div class="container" >
-            <h1 class="fs-large left">Gracias por contactarnos, nos comunicaremos lo más pronto posible</h1>
+            <h1 class="fs-large left">Gracias por contactarnos, nos comunicaremos contigo los más pronto posible</h1>
             <ul>
                 <li class="principal-list main-button left">
-                    <a class="buttom bg-pink fs-normal" href="index.html"> Volver al sitio</a>
+                    <a name="Convertion" class="buttom bg-pink fs-normal" href="index.html"> Volver</a>
                 </li>
             </ul>
         </div>
-        <img class="bomb" src="img/bomba.png" alt="">
     </div>
     <div  class="aside bg-gray" id="Calidad">
         <h2 class="center separar center marginTC fs-medium">Nuestros Clientes</h2>
@@ -170,15 +243,17 @@
                     <img class="logo-cliente" src="img/08l.png" alt="cliente">
                     <img class="logo-cliente" src="img/03l.png" alt="cliente">
                     <img class="logo-cliente" src="img/01l.png" alt="cliente">
+                    <img class="logo-cliente" src="img/10l.png" alt="cliente">
+                    <img class="logo-cliente" src="img/11l.png" alt="cliente">
                 </div>
             </div>
         </div> 
-      <div id="Footer" class="bg-black aside fs-normal f-pink">
+    <div id="Footer" class="bg-black aside fs-normal f-pink">
         <div class="columns3 center top f-pink">
             <h3>Contacto</h3>
             <ul>
                 <li class="separar ">
-                        <a class="line middle f-pink" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes">
+                        <a name="Convertion" class="line middle f-pink" href="https://wa.me/573045834160?text=Buen%20día,%20deseo%20más%20información%20sobre%20las%20dotaciones%20o%20uniformes">
                         <img  class="line middle icon" src="img/whatsapp.png" alt="wa">
                         <p class="line middle f-pink">304 583 4160</p>
                         </a>
@@ -189,14 +264,14 @@
                             <p class="line middle f-pink" >301 787 2978</p>
                         </a>    
                     </li> -->
-                <li>Cra 13 # 41-30</li>
+                <li>Calle 29sur # 50-41 Santa Rita</li>
             </ul>
         </div>
         <div class="columns3 center top f-pink">
             <h3>Horario de atención</h3>
             <ul>
                 <li>Lunes a Viernes de 8:00am - 5:30pm</li>
-                <li>Sábados de 8:00am - 5:30pm </li>
+                <li>Sábados de 8:00am - 2:00pm </li>
             </ul>
         </div>
         <div class="center columns3 center top f-pink">
@@ -204,13 +279,49 @@
         </div>
         <p class="allrights center fs-little-p f-pink"> Todos los derechos reservados Big Bang © 2019 - Desarrollado por <a class="f-pink" href="https://sahet.co/publicidad">sahet.co/publicidad</a></p>
     </div>
-    
-      
 
 
 
+    <script type="text/javascript">
+        WebFontConfig = {
+          google: { families: [ 'Open+Sans:400,700' ] }
+        };
+        (function() {
+          var wf = document.createElement('script');
+          wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+          wf.type = 'text/javascript';
+          wf.async = 'true';
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(wf, s);
+        })(); 
+      </script>
 
-    <script>
+      <script>
+          const convertions = document.getElementsByName('Convertion')
+
+          convertions.forEach(element => {
+              element.addEventListener('click', gtag_report_conversion.bind(null, element.href))
+          })
+
+          const Logo = document.getElementById('Logo')
+          const anchoVentana = document.documentElement.clientWidth || window.innerWidth;
+          let isBig = true
+
+          window.onscroll = function (e) {
+                if(anchoVentana >= 941){
+                    const scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+                    if(scroll < 30 && !isBig){
+                        isBig = true
+                        Logo.classList.remove('logo-normal')
+                    }else if(scroll >=30 && isBig){
+                        isBig = false
+                        Logo.classList.add('logo-normal')
+                    };
+                };
+            };
+
+          
+
       </script>
 
 </body>
