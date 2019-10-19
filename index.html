@@ -154,9 +154,18 @@
         .logo-normal{
             width: 22%;
         }
+
+        .bc{
+            background-image: url('img/bc.jpg');
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+            background-size: 44%;
+        }
     }
     @media(min-width:1367px){
-        
+        .bc{
+            background-size: 36%;
+        }
     }
 
     
@@ -218,11 +227,11 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </ul>
         </div>
     </div>
-    <div id="Inicio" class="inicio">
+    <div id="Inicio" class="inicio bc">
         <div class="pc w100">
             <img class="imagen-desktop" src="img/portada-desktop1.jpg" alt="imagen-portada">
         </div>
-        <div class="container" >
+        <div class="container " >
             <h1 class="fs-large left">Dotaciones y Uniformes Empresariales</h1>
             <ul>
                 <li class="principal-list left"><img class="list-icon line middle" src="img/laundry.png" alt=""> <p class="fs-medium line middle"> Dotaciones y uniformes de todo tipo </li>
